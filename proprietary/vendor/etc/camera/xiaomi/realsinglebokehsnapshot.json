@@ -3,10 +3,6 @@
   "NodesList": {
     "Node": [
       {
-        "NodeName": "com.xiaomi.plugin.swflip",
-        "NodeInstance":  "SwflipInstance"
-      },
-      {
         "NodeName": "com.xiaomi.plugin.mibokeh",
         "NodeInstance": "MibokehInstance"
       }
@@ -21,27 +17,17 @@
         },
         "DstPort": {
           "PortId": 0,
-          "NodeInstance":  "SwflipInstance"
+          "NodeInstance": "MibokehInstance"
         }
       },
       {
         "SrcPort": {
           "PortId": 0,
-          "NodeInstance":  "SwflipInstance"
+          "NodeInstance": "MibokehInstance"
         },
         "DstPort": {
           "PortId": 0,
-          "NodeInstance":  "MibokehInstance"
-        }
-      },
-      {
-        "SrcPort": {
-          "PortId": 0,
-          "NodeInstance":  "MibokehInstance"
-        },
-        "DstPort": {
-          "PortId": 0,
-          "NodeInstance":  "SinkBuffer"
+          "NodeInstance": "SinkBuffer"
         }
       }
     ]
