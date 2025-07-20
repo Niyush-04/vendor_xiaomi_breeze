@@ -5,6 +5,7 @@
 soong_namespace {
     imports: [
         "device/xiaomi/breeze",
+        "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/qcom-caf/sm8450",
         "hardware/qcom-caf/wlan",
         "hardware/xiaomi",
@@ -391,76 +392,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vulkan.adreno",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vulkan.adreno.so",
-            ],
-            shared_libs: [
-                "libadreno_utils",
-                "libgsl",
-                "libz",
-                "liblog",
-                "libllvm-glnext",
-                "libcutils",
-                "libhardware",
-                "vendor.qti.hardware.display.mapper@2.0",
-                "android.hardware.graphics.mapper@2.0",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "android.hardware.graphics.mapper@3.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libhidlbase",
-                "libutils",
-                "libnativewindow",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vulkan.adreno.so",
-            ],
-            shared_libs: [
-                "libadreno_utils",
-                "libgsl",
-                "libz",
-                "liblog",
-                "libllvm-glnext",
-                "libcutils",
-                "libhardware",
-                "vendor.qti.hardware.display.mapper@2.0",
-                "android.hardware.graphics.mapper@2.0",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "android.hardware.graphics.mapper@3.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libhidlbase",
-                "libutils",
-                "libnativewindow",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
@@ -9654,6 +9585,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vulkan.adreno",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vulkan.adreno.so",
+            ],
+            shared_libs: [
+                "libadreno_utils",
+                "libgsl",
+                "libz",
+                "liblog",
+                "libllvm-glnext",
+                "libcutils",
+                "libhardware",
+                "vendor.qti.hardware.display.mapper@2.0",
+                "android.hardware.graphics.mapper@2.0",
+                "vendor.qti.hardware.display.mapper@3.0",
+                "android.hardware.graphics.mapper@3.0",
+                "vendor.qti.hardware.display.mapperextensions@1.1",
+                "libhidlbase",
+                "libutils",
+                "libnativewindow",
+                "vendor.qti.hardware.display.mapper@4.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "jcos_nq_client",
     owner: "xiaomi",
     strip: {
@@ -18727,33 +18700,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsoc_helper_jni",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsoc_helper_jni.so",
-            ],
-            shared_libs: [
-                "libsoc_helper",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libspcom",
     owner: "xiaomi",
     strip: {
@@ -26907,17 +26853,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "TrustZoneAccessService",
-    owner: "xiaomi",
-    apk: "proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    soc_specific: true,
-}
-
-android_app_import {
     name: "uimgbaservice",
     owner: "xiaomi",
     apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
@@ -26925,6 +26860,30 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "HotwordEnrollmentYGoogleHEXAGON_WIDEBAND",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
     product_specific: true,
 }
 
@@ -27065,6 +27024,15 @@ dex_import {
         "proprietary/product/framework/uimservicelibrary.jar",
     ],
     product_specific: true,
+}
+
+dex_import {
+    name: "com.android.hotwordenrollment.common.util",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
+    ],
+    system_ext_specific: true,
 }
 
 dex_import {
