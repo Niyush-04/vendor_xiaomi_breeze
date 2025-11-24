@@ -26903,6 +26903,17 @@ android_app_import {
 }
 
 android_app_import {
+    name: "AtFwd2",
+    owner: "xiaomi",
+    apk: "proprietary/system_ext/app/AtFwd2/AtFwd2.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    system_ext_specific: true,
+}
+
+android_app_import {
     name: "ImsRcsService",
     owner: "xiaomi",
     apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
@@ -29853,31 +29864,6 @@ sh_binary {
     owner: "xiaomi",
     src: "proprietary/vendor/bin/vendor_modprobe.sh",
     filename: "vendor_modprobe.sh",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vmmgr",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vmmgr",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
