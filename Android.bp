@@ -24741,7 +24741,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "bm2n31",
+    name: "vendor_lib_rfsa_adsp_bm2n31_bin",
     filename: "bm2n31.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n31.bin",
@@ -24750,7 +24750,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n32",
+    name: "vendor_lib_rfsa_adsp_bm2n32_bin",
     filename: "bm2n32.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n32.bin",
@@ -24759,7 +24759,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n33",
+    name: "vendor_lib_rfsa_adsp_bm2n33_bin",
     filename: "bm2n33.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n33.bin",
@@ -24768,7 +24768,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n34",
+    name: "vendor_lib_rfsa_adsp_bm2n34_bin",
     filename: "bm2n34.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n34.bin",
@@ -24777,7 +24777,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n35",
+    name: "vendor_lib_rfsa_adsp_bm2n35_bin",
     filename: "bm2n35.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n35.bin",
@@ -24786,7 +24786,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n36",
+    name: "vendor_lib_rfsa_adsp_bm2n36_bin",
     filename: "bm2n36.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n36.bin",
@@ -24795,7 +24795,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n37",
+    name: "vendor_lib_rfsa_adsp_bm2n37_bin",
     filename: "bm2n37.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n37.bin",
@@ -24804,7 +24804,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n54",
+    name: "vendor_lib_rfsa_adsp_bm2n54_bin",
     filename: "bm2n54.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n54.bin",
@@ -24813,7 +24813,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n55",
+    name: "vendor_lib_rfsa_adsp_bm2n55_bin",
     filename: "bm2n55.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n55.bin",
@@ -24822,7 +24822,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "bm2n56",
+    name: "vendor_lib_rfsa_adsp_bm2n56_bin",
     filename: "bm2n56.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/bm2n56.bin",
@@ -24831,7 +24831,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libadsp_jpege_skel",
+    name: "vendor_lib_rfsa_adsp_libadsp_jpege_skel_so",
     filename: "libadsp_jpege_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so",
@@ -24840,7 +24840,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libapn_dsp_skel",
+    name: "vendor_lib_rfsa_adsp_libapn_dsp_skel_so",
     filename: "libapn_dsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libapn_dsp_skel.so",
@@ -24849,7 +24849,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_skel",
+    name: "vendor_lib_rfsa_adsp_libbitml_nsp_skel_so",
     filename: "libbitml_nsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so",
@@ -24858,7 +24858,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libbitml_nsp_v2_skel",
+    name: "vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so",
     filename: "libbitml_nsp_v2_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so",
@@ -24867,7 +24867,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libcamera_nn_skel",
+    name: "vendor_lib_rfsa_adsp_libcamera_nn_skel_so",
     filename: "libcamera_nn_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so",
@@ -24876,7 +24876,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdspCV_skel",
+    name: "vendor_lib_rfsa_adsp_libdspCV_skel_so",
     filename: "libdspCV_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so",
@@ -24885,7 +24885,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdsp_streamer_binning",
+    name: "vendor_lib_rfsa_adsp_libdsp_streamer_binning_so",
     filename: "libdsp_streamer_binning.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so",
@@ -24894,7 +24894,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvadsp",
+    name: "vendor_lib_rfsa_adsp_libfastcvadsp_so",
     filename: "libfastcvadsp.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so",
@@ -24903,7 +24903,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvdsp_skel",
+    name: "vendor_lib_rfsa_adsp_libfastcvdsp_skel_so",
     filename: "libfastcvdsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so",
@@ -24912,7 +24912,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhdr_skel",
+    name: "vendor_lib_rfsa_adsp_libhdr_skel_so",
     filename: "libhdr_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhdr_skel.so",
@@ -24921,7 +24921,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libhme_dsp_skel",
+    name: "vendor_lib_rfsa_adsp_libhme_dsp_skel_so",
     filename: "libhme_dsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhme_dsp_skel.so",
@@ -24930,7 +24930,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libmctfengine_skel",
+    name: "vendor_lib_rfsa_adsp_libmctfengine_skel_so",
     filename: "libmctfengine_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so",
@@ -24939,7 +24939,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveT2T_skel",
+    name: "vendor_lib_rfsa_adsp_libscveT2T_skel_so",
     filename: "libscveT2T_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so",
@@ -24948,7 +24948,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsixth_sia81xx_rx",
+    name: "vendor_lib_rfsa_adsp_libsixth_sia81xx_rx_so",
     filename: "libsixth_sia81xx_rx.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libsixth_sia81xx_rx.so",
@@ -24957,7 +24957,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libsw2dlut_dsp_skel",
+    name: "vendor_lib_rfsa_adsp_libsw2dlut_dsp_skel_so",
     filename: "libsw2dlut_dsp_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libsw2dlut_dsp_skel.so",
@@ -24966,7 +24966,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "misound_karaoke_res",
+    name: "vendor_lib_rfsa_adsp_misound_karaoke_res_bin",
     filename: "misound_karaoke_res.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_karaoke_res.bin",
@@ -24975,7 +24975,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "misound_karaokemix_res",
+    name: "vendor_lib_rfsa_adsp_misound_karaokemix_res_bin",
     filename: "misound_karaokemix_res.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_karaokemix_res.bin",
@@ -24984,7 +24984,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "misound_res_headphone",
+    name: "vendor_lib_rfsa_adsp_misound_res_headphone_bin",
     filename: "misound_res_headphone.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_res_headphone.bin",
@@ -24993,7 +24993,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "misound_res_spk",
+    name: "vendor_lib_rfsa_adsp_misound_res_spk_bin",
     filename: "misound_res_spk.bin",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin",
@@ -29213,56 +29213,6 @@ cc_prebuilt_binary {
                 "libqmiservices",
                 "libqmi_client_helper",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "qrtr-cfg",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/qrtr-cfg",
-            ],
-            shared_libs: [
-                "libqrtr",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "qrtr-lookup",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/qrtr-lookup",
-            ],
-            shared_libs: [
-                "libqrtr",
                 "libc++",
                 "libc",
                 "libm",
