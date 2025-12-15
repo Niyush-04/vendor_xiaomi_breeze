@@ -384,6 +384,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/breeze/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
     vendor/xiaomi/breeze/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/breeze/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
     vendor/xiaomi/breeze/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/xiaomi/breeze/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/xiaomi/breeze/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
@@ -409,9 +410,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/breeze/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/xiaomi/breeze/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/xiaomi/breeze/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/targetsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetsysnodesconfigs.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/perf/thermalboost.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/thermalboost.conf \
     vendor/xiaomi/breeze/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.km100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.km100.xml \
     vendor/xiaomi/breeze/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/xiaomi/breeze/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/breeze/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
     vendor/xiaomi/breeze/proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/11.0_config.sql \
     vendor/xiaomi/breeze/proprietary/vendor/etc/qcril_database/upgrade/config/12.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/12.0_config.sql \
@@ -1189,6 +1200,9 @@ PRODUCT_PACKAGES += \
     libpal_net_if \
     libpdmapper \
     libpdnotifier \
+    libperfconfig \
+    libperfgluelayer \
+    libperfioctl \
     libperipheral_client \
     libqc2audio_base \
     libqc2audio_basecodec \
@@ -1252,6 +1266,9 @@ PRODUCT_PACKAGES += \
     libqrtrclient \
     libqseed3 \
     libqsocket \
+    libqti-perfd-client \
+    libqti-perfd \
+    libqti-util \
     libqtigefar \
     libqtikeymaster4 \
     libqtikeymint \
@@ -1482,6 +1499,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.qspmhal@1.0-impl \
     vendor.silead.hardware.fingerprintext@1.0 \
     vendor_lib_rfsa_adsp_bm2n31_bin \
@@ -1633,6 +1652,7 @@ PRODUCT_PACKAGES += \
     qtiradio-saidl.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.perf.xml \
     vendor.qti.hardware.radio.ims.xml \
     ATFWD-daemon \
     SoterProvisioningTool \
@@ -1656,6 +1676,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.provider@2.7-service_64 \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
+    vendor.qti.hardware.perf-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
