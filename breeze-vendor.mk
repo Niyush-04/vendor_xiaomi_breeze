@@ -36,6 +36,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/breeze/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/xiaomi/breeze/proprietary/vendor/etc/acdbdata/ravelin_qrd/QRD_ravelin_in_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd/QRD_ravelin_in_acdb_cal.acdb \
     vendor/xiaomi/breeze/proprietary/vendor/etc/acdbdata/ravelin_qrd/QRD_ravelin_in_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd/QRD_ravelin_in_workspaceFileXml.qwsp \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/audio/sku_ravelin/mixer_paths_ravelin_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/mixer_paths_ravelin_qrd.xml \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/audio/sku_ravelin/resourcemanager_ravelin_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ravelin/resourcemanager_ravelin_qrd.xml \
     vendor/xiaomi/breeze/proprietary/vendor/etc/camera/InsceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/InsceneDetection.xml \
     vendor/xiaomi/breeze/proprietary/vendor/etc/camera/aivsModels1:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aivsModels1 \
     vendor/xiaomi/breeze/proprietary/vendor/etc/camera/aivsParams:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aivsParams \
@@ -554,6 +556,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/breeze/proprietary/vendor/etc/thermal-videochat-india-demo.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat-india-demo.conf \
     vendor/xiaomi/breeze/proprietary/vendor/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat.conf \
     vendor/xiaomi/breeze/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
+    vendor/xiaomi/breeze/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/xiaomi/breeze/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/xiaomi/breeze/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/xiaomi/breeze/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
