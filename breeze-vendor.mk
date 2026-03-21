@@ -1095,6 +1095,7 @@ PRODUCT_PACKAGES += \
     libizat_client_api \
     libizat_core \
     libjni_aidenoiserutilv2 \
+    libjnihelper \
     libjpege \
     libkeymasterdeviceutils \
     libkeymasterprovision \
